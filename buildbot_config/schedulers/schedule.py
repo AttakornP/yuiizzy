@@ -6,7 +6,7 @@ from buildbot.schedulers.basic import SingleBranchScheduler
 from buildbot_config.settings.settings_yuiizzy import BRANCH, PROJECT_NAME, PROJECT_CODE_URL, REPOSITORY_URL 
 
 #builder name for this project.
-builder_names = ['builder-sqlite']
+builder_names = ['builder-sqlite', 'builder-pg-yuiizzy']
 gitpoller = GitPoller(REPOSITORY_URL
         , project=PROJECT_NAME
         , branch=BRANCH
